@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "us-east-1"
-  
-  
+
+
 }
 
 #Create a new EC2 launch configuration
@@ -20,8 +20,8 @@ resource "aws_instance" "ec2_public" {
   tags = {
     "Name" = "EC2-PUBLIC"
   }
-  
- 
+
+
 }
 #Create a new EC2 launch configuration
 resource "aws_instance" "ec2_private" {
@@ -39,9 +39,4 @@ resource "aws_instance" "ec2_private" {
   tags = {
     "Name" = "EC2-PRIVATE"
   }
- 
 }
-################################
- 
-
-
